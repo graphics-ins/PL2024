@@ -7,7 +7,7 @@ Inês Meneses de Castro
 
 ## Resumo
 
-Este TPC consiste no desenvolvimento de um programa que tem como objetivo:
+Este TPC consiste no desenvolvimento de um programa que tem como objetivo devolver:
 
 - Lista de modalidades ordenada alfabeticamente;
 - Percentagem de atletas aptos e inaptos;
