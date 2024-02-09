@@ -7,8 +7,9 @@ def processar_dataset(emd):
         # Ignorar a primeira linha (cabeçalho)
         next(arquivo)
         linhas = arquivo.readlines()
+        
     # Inicializar estruturas de dados para armazenar as informações
-    modalidades = set()
+    modalidades = set() #conjunto de modalidades onde não aparecem repetições
     total_atletas = 0
     aptos = 0
     inaptos = 0
