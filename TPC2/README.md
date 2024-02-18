@@ -45,11 +45,11 @@ Out:
 
   \<ol>
   
-    <li>Primeiro item\</li>
+    <li>Primeiro item</li>
     
-    <li>Segundo item\</li>
+    <li>Segundo item</li>
     
-    <li>Terceiro item\</li>
+    <li>Terceiro item</li>
     
   \</ol>
   
