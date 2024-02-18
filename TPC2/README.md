@@ -27,7 +27,8 @@ In: Este é um \*\*exemplo\*\* ...
 Out: Este é um \<b>exemplo\</b> ...
 
 
-### Itálico: pedaços de texto entre "\*":
+### Itálico: 
+pedaços de texto entre "\*":
 
 In: Este é um \*exemplo\* ...
 
