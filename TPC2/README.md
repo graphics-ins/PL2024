@@ -5,7 +5,7 @@ A95458
 
 Inês Meneses de Castro
 
-## Resum2
+## Resumo
 
 ```python
 re.sub(pattern, repl, string, count=0, flags=0)
