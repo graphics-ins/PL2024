@@ -16,7 +16,7 @@ Cabeçalhos: linhas iniciadas por "# texto", ou "## texto" ou "### texto"
 
 In: \#Exemplo
 
-Out: <h1>Exemplo</h1>
+Out: \<h1>Exemplo</h1>
 
 
 Bold: pedaços de texto entre "**":
