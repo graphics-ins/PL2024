@@ -1,3 +1,5 @@
+import sys
+import re
 import os
 import xml.etree.ElementTree as ET
  
@@ -40,7 +42,7 @@ import xml.etree.ElementTree as ET
     #   <li>Terceiro item</li>
     # </ol>
     
-    md = re.sub(r'^(\d+)\.\s(.*?)$', r'<li>\2</li>', md, flags=re.MULTILINE)
+    md = re.sub(r'^(\d+)\.\s(.*?)(?=\n\d+\.|\Z)', r'</ol>\n<ol>\n<li>\2</li>', md, flags=re.MULTILINE|re.DOTALL)
     md = '<ol>\n' + md + '\n</ol>'
 
     # Link - [texto](endereço URL)
@@ -57,20 +59,9 @@ import xml.etree.ElementTree as ET
 
     return md
 
-# Teste
-markdown_text = """
-# Título
-Este é um **exemplo** de conversor de Markdown para HTML.
+# Ler conteúdo do stdin
+markdown_text = sys.stdin.read()
 
-## Lista
-1. Item 1
-2. Item 2
-
-## Links e Imagens
-Como pode ser consultado em [página da UC](http://www.uc.pt)
-
-Como se vê na imagem seguinte: ![imagem de um coelho](http://www.coellho.com)
-"""
-
+# Converter Markdown para HTML
 html_output = markdown_to_html(markdown_text)
 print(html_output)
