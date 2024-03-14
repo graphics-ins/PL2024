@@ -11,10 +11,13 @@ Construir um analisador léxico para uma máquina de venda que pode receber:
 ```
 >> MOEDAS 1e 2e 5c 10c 20c 50c
 << SALDO = x
+
 >> LISTAR 
 << listar os produtos e os preços do cvs
+
 >> SELECIONAR ID
 << o produto é selecionado
+
 >> SAIR
 << TROCO = x
 
