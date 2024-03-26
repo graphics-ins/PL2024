@@ -20,7 +20,7 @@ c=a*b/(a/b)
 ```
 T =  {'?', var, '=', '*', num, '/', '(', '-', ')', '+', '!'}
 
-N = {S, Exp1, Exp2, Exp3, Op1, Op2}
+N = {S, Expr, Expr2, Expr3, Op, Op2}
 
 S = S
 
@@ -30,7 +30,7 @@ P = {
         |'!' Expr              LA = {'!'}
         |var '=' Expr          LA = {var}
 
-    Expr -> Exp2 Op        
+    Expr -> Expr2 Op        
 
     Op  -> '+' Expr            LA = {'+'}
         | '-' Expr             LA = {'-'}
@@ -42,7 +42,7 @@ P = {
           | '/' Expr           LA = {'/'}
           | &                  LA = Follow(Op2) = Follow(Expr2) = {')','+','-'}
 
-    Expr3 -> '(' Exp1 ')'      LA = {'('}
+    Expr3 -> '(' Expr ')'      LA = {'('}
             | num              LA = {num}
             | var              LA = {var}
 
