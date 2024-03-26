@@ -7,9 +7,8 @@ Inês Meneses de Castro
 
 ## Resumo
 
-Construir uma gramática para uma linguagem simples.
+Construir uma gramática para uma linguagem simples do tipo:
 
-Exemplo:
 ```
 ?a 
 b=a*2/(27-3)
